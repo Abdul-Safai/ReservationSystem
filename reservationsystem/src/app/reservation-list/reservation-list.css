@@ -1,0 +1,38 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.reservation-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reservation-text {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+button {
+  background: linear-gradient(135deg, #e94e77, #d6336c);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-left: 30px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #c12f57, #a22448);
+  transform: translateY(-2px);
+}

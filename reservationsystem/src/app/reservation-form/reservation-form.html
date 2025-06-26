@@ -1,0 +1,19 @@
+<h2>Make a Reservation</h2>
+
+<label>Select Area:</label>
+<select [(ngModel)]="selectedArea">
+  <option value="" disabled selected>Select area</option>
+  <option *ngFor="let area of areas" [value]="area">{{ area }}</option>
+</select>
+
+<br><br>
+
+<label>Select Time Slot:</label>
+<select [(ngModel)]="selectedTimeSlot">
+  <option value="" disabled selected>Select time slot</option>
+  <option *ngFor="let slot of timeSlots" [value]="slot">{{ slot }}</option>
+</select>
+
+<br><br>
+
+<button class="reserve-btn" (click)="addReservation()">Reserve</button>
